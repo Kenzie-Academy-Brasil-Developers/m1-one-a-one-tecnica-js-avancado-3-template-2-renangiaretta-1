@@ -22,3 +22,13 @@ const funcionarios = [
         tempoEmpresa: 8,
     },
 ];
+
+function atualizaSalario(lista){
+    for(let i=0; i<lista.length; i++){
+        if(lista[i].tempoEmpresa >= 3){
+            lista[i].salario = (lista[i].salario + 800)
+        }
+    }
+    return lista
+}
+console.log(atualizaSalario(funcionarios))
